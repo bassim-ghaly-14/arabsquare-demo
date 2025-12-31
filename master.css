@@ -1,0 +1,89 @@
+:root{
+  --red:#8b0000;
+  --black:#0a5a5a;
+  --second: #d4af37;
+  --muted:#e6e6e6;
+  --card-bg:#fff;
+  --glass: rgba(255,255,255,0.06);
+  --container: 1200px;
+  --radius:10px;
+  --shadow: 0 6px 18px rgba(16,24,40,0.08);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(180deg, #f5f6f8 0%, #ffffff 100%);
+  color:var(--black);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.55;
+}
+.container{max-width:var(--container);margin:0 auto;padding:20px}
+
+/* Header */
+.logo {height: 140px; width: 140px; margin: 5px;}
+.site-header{background:linear-gradient(90deg, #fff 0%, #fff 100%);background: var(--red);border-bottom:1px solid var(--muted);position:sticky;top:0;z-index:40}
+.header-inner{display:flex;align-items:center;gap:12px;justify-content:space-between;height: 140px;}
+.main-nav{display:flex;gap:8px}
+.main-nav button{background:none;border:none;padding:10px 12px;border-radius:8px;cursor:pointer;font-size: medium; color:var(--card-bg)}
+.main-nav button.active, .main-nav button:hover{background:var(--glass);color:var(--second);font-weight: 600; box-shadow:var(--shadow)}
+.search-row{min-width:240px}
+#search{width:100%;padding:8px 10px;border:1px solid var(--black);border-radius:8px; outline:none;color: var(--red);}
+input::placeholder{color: var(--red);}
+
+/* Sections */
+.section{display:none;padding:24px 0}
+.active-section{display:block}
+
+/* Cards grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:16px;margin-top:12px}
+
+/* Card */
+.card{background:var(--red);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);border:1px solid #f0f0f0}
+.card h3{margin:0 0 8px; color: var(--second); font-size:22px}
+.card p{margin:0 0 8px;color:var(--card-bg);font-size:16px;}
+.green{background: var(--black);}
+
+/* Team profile */
+.team-header{display:flex;gap:16px;align-items:center}
+.team-crest{width:80px;height:55px;border-radius:8px;background: var(--second);display:flex;align-items: center;justify-content:center;}
+.t-crest {width:70px; height:50px;border-radius:8px;}
+#timeline {min-height:120px; color: var(--second);}
+.tag{display:block;padding:4px 8px;border-radius:6px;color:var(--card-bg);background:var(--black);width: fit-content; font-size:13px;margin-left:6px}
+
+/* Table */
+.table{width:100%;border-collapse:collapse;margin-top:12px}
+.table th, .table td{padding:8px;border-bottom:1px solid var(--muted);text-align:right;font-size:13px}
+.table th {color: var(--second);}
+.table td {color: var(--card-bg);}
+
+.trophies , .ranking {
+  color: var(--card-bg);
+}
+
+/* Small utilities */
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.col{flex:1}
+
+/* Responsive */
+@media (max-width:800px){
+  .header-inner{flex-direction:column;align-items:stretch;}
+  .main-nav{padding: 20px 2px;}
+  .brand ,.search-row{display: none;}
+}
+
+/* Kits gallery */
+.kit-img{width:100%;height:160px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
+
+/* Controls */
+.controls{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.btn{padding:8px 12px;border-radius:8px;border:1px solid var(--muted);background:var(--black);color: var(--card-bg); font-weight:600; cursor:pointer}
+.open{width: 50px;height: 60px;}
+.btn:hover{background: var(--red);}
+.btn.primary{background:var(--red);color:#fff;border-color:var(--red)}
+
+/* Footer */
+.site-footer{padding:7px 0;border-top:1px solid #eee;margin-top:24px;text-align:center;color:var(--second);background: var(--red); font-size:17px}
+/* chef-belly */

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الميدان العربي — المنتخبات العربية</title>
+  <link rel="stylesheet" href="master.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- خط عربي جميل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body dir="rtl" class="font-ar">
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">
+        <img class="logo" src="logo.PNG" alt="شعار الميدان العربي">
+      </h1>
+      <nav class="main-nav">
+        <button data-section="hub" class="active">البيت</button>
+        <button data-section="worldcup">المونديال</button>
+        <button data-section="continental">الكؤوس القارية</button>
+        <button data-section="head2head">مواجهات عربية</button>
+        <button data-section="stats">إحصائيات</button>
+        <!-- <button data-section="kits">متحف القمصان</button> -->
+      </nav>
+      <div class="search-row">
+        <input id="search" placeholder="ابحث عن منتخب أو لاعب..." />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hub (القاعدة الرئيسية) -->
+    <section id="hub" class="section active-section"></section>
+
+    <!-- World Cup Encyclopedia -->
+    <section id="worldcup" class="section"></section>
+
+    <!-- Continental (AFCON & AFC) -->
+    <section id="continental" class="section"></section>
+
+    <!-- Head-to-Head -->
+    <section id="head2head" class="section"></section>
+
+    <!-- Stats -->
+    <section id="stats" class="section"></section>
+
+    <!-- Kits -->
+    <section id="kits" class="section"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <strong>2025 الميدان العربي</strong> — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <!-- Data & App logic -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+<!-- chef-belly v.1 -->
