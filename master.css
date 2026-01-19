@@ -75,6 +75,7 @@ input::placeholder{color: var(--red);}
   .main-nav{max-width: 100%;overflow-x: auto;-webkit-overflow-scrolling: touch;}
   .main-nav::-webkit-scrollbar{display: none;}
   .brand ,.search-row{display: none;}
+  .site-footer{font-size:12px;}
 }
 
 /* Kits gallery */
